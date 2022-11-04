@@ -1,11 +1,10 @@
-import { useState } from "react";
+import { BrowserRouter } from "react-router-dom";
 import TheLayout from "./views/pages/TheLayout";
 export const App = () => {
-  const [state, setState] = useState();
   return (
-    <div>
+    <BrowserRouter>
       <TheLayout />
-    </div>
+    </BrowserRouter>
   );
 };
 
